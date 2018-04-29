@@ -19,4 +19,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD python app.py
+CMD FLASK_APP=app.py FLASK_DEBUG=1 python app.py
