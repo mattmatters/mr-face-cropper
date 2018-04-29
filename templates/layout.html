@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {% include 'head.html' %}
+    <body>
+        <header>
+            <a href="{{ url_for('index')}}">Mr. Face Cropper</a>
+        </header>
+        {% block body %}
+        <!-- Content gets served here -->
+        {% endblock %}
+
+        <footer class="credits">
+            <p>Made by <a href="http://mattmatters.io">Matt Lewis</a></p>
+            <div class="social">
+                <a href="https://github.com/mattmatters/mr-face-cropper"><i class="fa fa-github" aria-hidden="true" /></a>
+            </div>
+        </footer>
+    </body>
+ </html>
