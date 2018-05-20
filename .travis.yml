@@ -1,12 +1,8 @@
-language: python
+sudo: required
 
-python:
-  - "3.6"
-
-cache: pip
-
-install:
-  - pip install -r requirements.txt
+services:
+  - docker
 
 script:
-  echo "Totally testing stuff"
+  docker build -t travis_test .
+  docker run -it travis_test ./test.sh
