@@ -4,5 +4,5 @@ services:
   - docker
 
 script:
-  docker build -t travis_test .
-  docker run -it travis_test ./test.sh
+  - docker build -t travis_test .
+  - docker run -it travis_test ./test.sh
